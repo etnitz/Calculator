@@ -21,10 +21,15 @@ one.grid(row=2,column=1)
 two = Button(window, text='2', command=lambda: add_text(2))
 two.grid(row=2, column=2)
 
-three = Button(window, text='3')
+three = Button(window, text='3', command=lambda: add_text(3))
 three.grid(row=2,column=3)
 
-four = Button(window, text='4')
+four = Button(window, text='4',command=lambda: add_text(4))
 four.grid(row=2,column=4)
+
+five = Button(window, text='5', command=lambda: add_text(5))
+five.grid(row=3,column=1)
+
+
 
 window.mainloop()
