@@ -16,60 +16,60 @@ entryField = Text(window, width=61, height=5)
 entryField.grid(row=1,column=1, columnspan=4)
 
 one = Button(window, text='1', command=lambda: add_text(1))
-one.grid(row=2,column=1)
+one.grid(row=4, column=1)
 
 two = Button(window, text='2', command=lambda: add_text(2))
-two.grid(row=2, column=2)
+two.grid(row=4, column=2)
 
 three = Button(window, text='3', command=lambda: add_text(3))
-three.grid(row=2,column=3)
+three.grid(row=4, column=3)
 
 four = Button(window, text='4',command=lambda: add_text(4))
-four.grid(row=2,column=4)
+four.grid(row=3, column=1)
 
 five = Button(window, text='5', command=lambda: add_text(5))
-five.grid(row=3,column=1)
+five.grid(row=3, column=2)
 
 six = Button(window, text='6', command=lambda: add_text(6))
-six.grid(row=3,column=2)
+six.grid(row=3, column=3)
 
 seven = Button(window, text='7', command=lambda: add_text(7))
-seven.grid(row=3,column=3)
+seven.grid(row=2, column=1)
 
 eight = Button(window, text='8', command=lambda: add_text(8))
-eight.grid(row=3,column=4)
+eight.grid(row=2, column=2)
 
 nine = Button(window, text='9', command=lambda:add_text(9))
-nine.grid(row=4,column=1)
+nine.grid(row=2, column=3)
 
 zero = Button(window, text='0', command=lambda: add_text(0))
-zero.grid(row=4,column=2)
+zero.grid(row=5, column=2)
 
 add = Button(window, text='+', command=lambda: add_text('+'))
-add.grid(row=4,column=3)
+add.grid(row=5, column=4)
 
 sub = Button(window, text='-', command=lambda: add_text('-'))
-sub.grid(row=4,column=4)
+sub.grid(row=4, column=4)
 
 mult = Button(window, text='*', command=lambda: add_text('*'))
-mult.grid(row=5, column=1)
+mult.grid(row=3, column=4)
 
 div = Button(window, text='/', command=lambda: add_text('/'))
-div.grid(row=5, column=2)
+div.grid(row=2, column=4)
 
 lp = Button(window, text='(', command=lambda: add_text('('))
-lp.grid(row=5,column=3)
+lp.grid(row=6, column=1)
 
 rp = Button(window, text=')', command=lambda: add_text(')'))
-rp.grid(row=5, column=4)
+rp.grid(row=6, column=2)
 
 dec = Button(window, text='.', command=lambda: add_text('.'))
-dec.grid(row=6, column=1)
+dec.grid(row=5, column=1)
 
 equal = Button(window, text='=')
-equal.grid(row=6, column=2)
+equal.grid(row=6, column=3, columnspan=2)
 
 clear = Button(window, text='clear')
-clear.grid(row=6, column=3)
+clear.grid(row=5, column=3)
 
 window.mainloop()
